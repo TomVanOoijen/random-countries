@@ -13,3 +13,12 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
+.intro {
+  padding: 2.4rem;
+  background: blue;
+
+  @include hocus {
+    color: red;
+  }
+}
