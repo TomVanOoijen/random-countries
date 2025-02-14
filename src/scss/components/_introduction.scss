@@ -1,0 +1,10 @@
+$-module: "introduction";
+
+.#{$-module} {
+  background-color: red;
+  padding: 2.4rem;
+
+  @include hocus {
+    color: green;
+  }
+}

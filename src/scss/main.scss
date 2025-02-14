@@ -1,4 +1,17 @@
-@use "abstracts";
-@use "base";
-@use "layout";
-@use "pages";
+/* SASS LIBRARIES */
+@use "sass:math";
+
+/* BASE */
+@use "base/functions";
+@use "base/mixins/container";
+@use "base/mixins/hocus";
+
+@use "base/base";
+@use "base/fonts";
+@use "base/variables";
+
+/* COMPONENTS */
+@use "components/container";
+@use "components/footer";
+@use "components/header";
+@use "components/introduction";
