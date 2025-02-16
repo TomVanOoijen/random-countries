@@ -1,10 +1,11 @@
+@use "../abstracts" as *;
+
 $-module: "introduction";
 
 .#{$-module} {
-  background-color: red;
-  padding: 2.4rem;
+  background-color: blue;
 
   @include hocus {
-    color: green;
+    background-color: red;
   }
 }

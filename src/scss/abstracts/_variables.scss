@@ -1,0 +1,14 @@
+@use "sass:math";
+
+// FONTS
+// ---------------------
+
+$base-font: Arial, sans-serif;
+$base-line-height: math.div(
+  26,
+  16
+); // line-height should be 26px, base font is 16px. 26/16
+
+// FONTS
+// ---------------------
+$container-width: 1100;

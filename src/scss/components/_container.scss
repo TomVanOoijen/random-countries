@@ -1,7 +1,6 @@
-@use "sass:math";
-@use "../base/mixins/container" as *;
-
 $-module: "container";
 
 .#{$-module} {
+  width: 1100px;
+  margin: 0 auto;
 }

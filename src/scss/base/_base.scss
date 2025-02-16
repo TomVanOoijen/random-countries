@@ -1,5 +1,7 @@
-@use "mixins/hocus";
+@use "../abstracts" as *;
 
+// RESET
+// ---------------------
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,21 @@
   box-sizing: inherit;
 }
 
+// BASE
+// ---------------------
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
+
+body {
+  line-height: $base-line-height;
+  font-family: $base-font;
+  font-size: 1.6rem;
 }

@@ -1,17 +1,16 @@
-/* SASS LIBRARIES */
+// SASS LIBRARIES
+// ---------------------------
 @use "sass:math";
 
-/* BASE */
-@use "base/functions";
-@use "base/mixins/container";
-@use "base/mixins/hocus";
-
+// BASE
+// ---------------------------
 @use "base/base";
 @use "base/fonts";
-@use "base/variables";
-
-/* COMPONENTS */
-@use "components/container";
-@use "components/footer";
-@use "components/header";
+// COMPONENTS
+// ---------------------------
 @use "components/introduction";
+@use "components/container";
+
+// LAYOUT
+// ---------------------------
+@use "layout/footer";

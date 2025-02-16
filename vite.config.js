@@ -8,7 +8,7 @@ export default defineConfig({
         websiteTitle: "Tom van Ooijen",
         description: "Een onvergetelijke beeldend avontuur. Geef jezelf over.",
       },
-      partialDirectory: "src/partials",
+      partialDirectory: "src",
     }),
   ],
 });
