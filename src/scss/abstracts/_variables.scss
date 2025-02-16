@@ -3,12 +3,15 @@
 // FONTS
 // ---------------------
 
-$base-font: Arial, sans-serif;
+$base-font: "Inter", sans-serif;
 $base-line-height: math.div(
   26,
   16
 ); // line-height should be 26px, base font is 16px. 26/16
 
-// FONTS
+// CONTAINER
 // ---------------------
 $container-width: 1100;
+
+// COLORS
+$color-black: #0a0a0a;
