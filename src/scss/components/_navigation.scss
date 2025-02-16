@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+$-module: "navigation";
+
+.#{$-module} {
+  margin-top: 2rem;
+  background-color: $color-offwhite;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+
+    @include hocus {
+      text-decoration: underline;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 2rem;
+
+    &-icon {
+      color: $color-black;
+
+      @include hocus {
+        color: $color-black;
+      }
+    }
+  }
+}
