@@ -1,0 +1,36 @@
+@use "../abstracts" as *;
+
+$-module: "choose-country-results";
+
+.#{$-module} {
+  margin-top: 1.6rem;
+  height: 9rem;
+  display: flex;
+  padding: 1.6rem;
+  background-color: $color-light-green;
+  border-radius: 10px;
+  color: $color-green;
+  gap: 1.6rem;
+
+  &__flag {
+    height: 58px;
+    width: 72px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__country {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.1;
+    }
+    &__timestamp {
+      font-size: 1.4rem;
+    }
+  }
+}

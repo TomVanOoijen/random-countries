@@ -4,15 +4,23 @@
 // ---------------------
 
 $base-font: "Inter", sans-serif;
+$heading-font: "Poppins", sans-serif;
 $base-line-height: math.div(
   26,
   16
 ); // line-height should be 26px, base font is 16px. 26/16
+$heading-line-height: math.div(64, 48);
 
 // CONTAINER
 // ---------------------
 $container-width: 1100;
 
 // COLORS
-$color-black: #0a0a0a;
+$color-black: #09090b;
 $color-offwhite: #f3f4f6;
+$color-light-blue: #eff6ff;
+$color-dark-blue: #2563eb;
+$color-blue: #dbeafe;
+$color-darkest-blue: #172554;
+$color-light-green: #f0fdf4;
+$color-green: #052e16;
