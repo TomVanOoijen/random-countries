@@ -1,10 +1,11 @@
 <div class="introduction">
-  <h1 class="heading--1">Hello World!</h1>
-  <p class="introduction__description">Vestibulum posuere convallis suscipit.
-    Phasellus quis libero augue. Curabitur imperdiet porttitor ex, eu euismod
-    lorem pretium vel. Maecenas sollicitudin, erat et pellentesque efficitur,
-    libero risus gravida odio, ac rutrum neque sapien rhoncus nibh. Sed diam
-    metus, vestibulum ut dolor eget, lacinia suscipit turpis. Praesent eu orci
-    semper, dapibus velit in, euismod mi. Pellentesque consectetur dolor sed mi
-    tempus molestie.</p>
+  <div class="chosenCountry">Klik op kies</div>
+  <button class="buttonCountry">Kies</button>
 </div>
+
+<script>
+  const chosenCountry = document.querySelector('.chosenCountry'); const
+  buttonCountry = document.querySelector('.buttonCountry');
+  buttonCountry.addEventListener('click', function() { chosenCountry.textContent
+  = 'Nederland'; })
+</script>
