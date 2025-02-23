@@ -17,11 +17,11 @@ $-module: "choose-country";
     margin-bottom: 6.4rem;
   }
 
-  &__country {
+  &__content {
     display: flex;
     gap: 1.6rem;
 
-    &-details {
+    &-country {
       height: 9rem;
       display: flex;
       padding: 1.6rem;
@@ -34,6 +34,7 @@ $-module: "choose-country";
 
       &--active {
         background-color: $color-blue;
+        cursor: default;
       }
 
       &__flag {
@@ -56,21 +57,21 @@ $-module: "choose-country";
         text-align: center;
       }
     }
-  }
 
-  &__button {
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 2.4rem;
-    flex-basis: 25%;
-    border: none;
-    background-color: $color-dark-blue;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
+    &-button {
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 2.4rem;
+      flex-basis: 25%;
+      border: none;
+      background-color: $color-dark-blue;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
 
-    @include hocus {
-      background-color: darken($color-dark-blue, 10);
+      @include hocus {
+        background-color: darken($color-dark-blue, 10);
+      }
     }
   }
 }
