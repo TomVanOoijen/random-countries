@@ -4,33 +4,33 @@ $-module: "choose-country";
 
 .#{$-module} {
   background-color: $color-light-blue;
-  padding: 6.4rem;
+  padding: 1.8rem;
   border-radius: 10px;
-  margin-top: 6.4rem;
+  margin-top: 2rem;
   margin-bottom: 3.2rem;
 
   &__heading {
     font-family: $heading-font;
     line-height: $heading-line-height;
-    font-size: 4.8rem;
+    font-size: 3.6rem;
     text-align: center;
-    margin-bottom: 6.4rem;
+    margin-bottom: 3.6rem;
+    margin-top: 1.8rem;
   }
 
   &__content {
+    gap: 1.2rem;
     display: flex;
-    gap: 1.6rem;
+    flex-direction: column;
 
     &-country {
-      height: 9rem;
-      display: flex;
-      padding: 1.6rem;
       background-color: #fff;
       border-radius: 10px;
-      flex-basis: 75%;
-      justify-content: center;
+      padding: 1.2rem;
+      display: flex;
+      gap: 1.6rem;
       align-items: center;
-      position: relative;
+      height: 5.2rem;
 
       &--active {
         background-color: $color-blue;
@@ -38,39 +38,68 @@ $-module: "choose-country";
       }
 
       &__flag {
-        height: 58px;
-        width: 72px;
+        height: 3.2rem;
         object-fit: cover;
-        position: absolute;
-        left: 1.6rem;
-        top: 1.6rem;
-        bottom: 1.6rem;
-        border-radius: 6px;
+        border-radius: 5px;
       }
-
       &__name {
         color: $color-darkest-blue;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         line-height: 1.2;
         font-weight: 600;
         max-width: 31rem;
-        text-align: center;
       }
     }
 
     &-button {
+      width: 100%;
+      height: 5.2rem;
       font-family: inherit;
       font-weight: 600;
-      font-size: 2.4rem;
-      flex-basis: 25%;
+      font-size: 2rem;
       border: none;
       background-color: $color-dark-blue;
       border-radius: 10px;
       color: #fff;
       cursor: pointer;
+    }
+  }
 
-      @include hocus {
-        background-color: darken($color-dark-blue, 10);
+  @include respond-to(medium) {
+    margin-top: 6.4rem;
+    padding: 6.4rem;
+    margin-bottom: 3.2rem;
+
+    &__heading {
+      font-size: 4.8rem;
+      text-align: center;
+      margin-bottom: 6.4rem;
+    }
+
+    &__content {
+      flex-direction: row;
+
+      &-country {
+        height: 9rem;
+        padding: 1.6rem;
+        flex-basis: 75%;
+
+        &__flag {
+          height: 58px;
+          width: 72px;
+        }
+
+        &__name {
+          font-size: 2.4rem;
+          max-width: 31rem;
+          text-align: center;
+        }
+      }
+
+      &-button {
+        font-size: 2.4rem;
+        flex-basis: 25%;
+        height: 9rem;
       }
     }
   }

@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [
     handlebars({
       context: {
-        websiteTitle: "Tom van Ooijen",
-        description: "Een onvergetelijke beeldend avontuur. Geef jezelf over.",
+        websiteTitle: "Landengenerator",
+        description: "Voor de leukste avonden van het jaar.",
       },
       partialDirectory: "src",
     }),
