@@ -8,6 +8,8 @@ At this point, you can press the button again after clicking the button. This is
 
 The project is build using Vite and written in Handlebars, SCSS and vanilla Javascript.
 
+Check live URL: https://random-countries-brown.vercel.app
+
 ## Installation
 
 Clone project and install dependencies
